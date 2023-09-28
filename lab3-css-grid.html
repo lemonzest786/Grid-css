@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3 | CSS Grid</title>
+		<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* Put styles for CSS Grid here for the Lab */
+			.container{
+				display: grid;
+				height: 80vh;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: repeat(6, 1fr);
+				row-gap: 5px;
+				column-gap: 5px;
+				padding: 10px;
+			}
+			.Branding{
+				
+				grid-row: 1/3 ;
+			}
+			
+			.GlobalNav{
+				
+				grid-column: 2/6;
+			}
+			
+			.LocalNav{
+				
+				grid-row: 3/6 ;
+			}
+			
+			.Footer{
+				
+				grid-column: 1/6;
+			}
+			
+			.TopStory{
+				
+				grid-row: 3/4;
+				grid-column: 2/5;
+			}
+			
+			.GlobalNews{
+				
+				grid-row: 4/6;
+				grid-column: 2/3;
+			}
+			
+			.NationalNews{
+				
+				grid-row: 4/6;
+				grid-column: 3/4;
+			}
+			
+			.LocalNews{
+				
+				grid-row: 4/6;
+				grid-column: 4/5;
+			}
+			
+			.Search{
+				
+				grid-column: 5/6;
+				grid-row: 1/2;
+			}
+			
+			.MarketInfo{ 
+				
+				grid-column: 5/6;
+				grid-row: 5/6;
+			}
+			
+			.Advertising1{
+				
+				grid-column: 2/5;
+				grid-row:1/2 ;
+			}
+			
+			.Advertising2{
+				
+				grid-row: 3/5;
+				grid-column: 5/6;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="Branding">
+				<h2>Branding</h2>
+			</div>
+			<div class="GlobalNav">
+				<h2>Global Nav</h2>
+			</div>
+			<div class="LocalNav">
+				<h2>Local Nav</h2>
+			</div>
+			<div class="Footer">
+				<h2>Footer</h2>
+			</div>
+			<div class="TopStory">
+				<h2>Top Story</h2>
+			</div>
+			<div class="GlobalNews">
+				<h2>Global News</h2>
+			</div>
+			<div class="NationalNews">
+				<h2>National News</h2>
+			</div>
+			<div class="LocalNews">
+				<h2>Local News</h2>
+			</div>
+			<div class="Search">
+				<h2>Search</h2>
+			</div>
+			<div class="MarketInfo">
+				<h2>Market Info</h2>
+			</div>
+			<div class="Advertising1">
+				<h2>Advertising 1</h2>
+			</div>
+			<div class="Advertising2">
+				<h2>Advertising 2</h2>
+			</div>
+		</div>
+	</body>
+</html>
